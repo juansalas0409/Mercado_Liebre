@@ -5,6 +5,7 @@ const port = 3000;
 const publicPath = path.join(__dirname, './public')
 
 app.use(express.static(publicPath));
+
 app.listen(process.env.PORT || 3000, function() {
     console.log('Se esta corriendo el servidor en http://localhost:3000')
 })
