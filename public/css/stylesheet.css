@@ -1,0 +1,225 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+
+}
+
+header{
+    background-color:  #EAC926;
+}
+
+.logo-search{
+    display: flex;
+    align-items: center;
+}
+
+.logo-search div{
+    width: 50%;
+}
+
+.search-icon{
+    margin: 15px;
+    margin-bottom: 0px;
+    width: max-content;
+}
+
+.fa-search{
+    background-color: #ffffff;
+    margin: 15px;
+    margin-top: 1px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    border: 1px solid #666;
+}
+
+main {
+    width: 90%;
+    margin: 20px;
+}
+
+main article{
+    margin: 10px;
+}
+
+p{
+    font-size: 12px;
+}
+
+.title{
+    font-size: 24px;
+    color: #666;
+}
+
+.description{
+    font-size: 16px;
+    color: #666;
+}
+
+main img {
+width: 100%;
+text-align: center;
+}
+
+.logo{
+    margin: 15px;
+}
+
+.promo{
+    text-align: center;
+}
+
+.fa-bars{
+    background-color: #1259c3;
+    font-size: 5vw;
+    margin: 10px 45vw;
+    text-align: center;
+    border: 1px solid #666;
+    border-radius: 10%;
+    padding: 7px;
+    color: #ffffff;
+}
+
+footer article{
+    text-align: center;
+    margin: 10px;
+}
+
+footer i{
+    font-size: 2em;
+    color: #1259c3;
+}
+
+
+article div{
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+.price-discount{
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.fa-truck{
+    color: #39b54a;
+    display: block;
+    padding: 5px;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -35px;
+}
+
+.price{
+    font-size: 18px;
+    flex-grow: 0.1 ;
+}
+
+.discount{
+    font-size: 16px;
+    color: #39b54a;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.form-block{
+    background-color: rgb(100, 100, 100);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form label{
+    font-size: 16px;
+}
+
+form label input{
+    border-radius: 10%;
+}
+
+.buyer-seller{
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.register{
+    background-color: rgb(100, 100, 100);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media (max-width: 360px){
+    /* Version Movil */
+    nav{
+        display: none;
+    }
+
+    .description{
+        display: none;
+    }
+}
+
+@media (min-width: 361px){
+    /* Version Tablet */
+    .burger{
+        display: none;
+    }
+
+    .nav-bar{
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    ul{
+        list-style-type: none;
+        display: flex;
+    }
+    
+    li{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    main section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    main section article{
+        box-shadow:  0px 0px 10px rgb(100, 100, 100);
+        width: 42%;
+    }
+}
+
+@media (min-width: 769px){
+    /* Version Laptop */
+    main section article{
+        width: 20%;
+    }
+}
