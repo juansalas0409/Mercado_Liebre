@@ -194,6 +194,10 @@ form label input{
 
 @media (max-width: 360px){
     /* Version Movil */
+    .search-icon{
+        width: max-content;
+    }
+
     nav{
         display: none;
     }
