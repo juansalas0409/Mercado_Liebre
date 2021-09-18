@@ -9,27 +9,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1ff01f57c9.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/images/music-solid.svg">
     <title>Mercado Liebre</title>
 </head>
 <body>
     <header>
-        <div class="logo-search">
-            <div>
+        <div class="header-tablet">
+            <div class="logo-search">
                 <img class = "logo" src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre.svg">
             </div>
             <div class="search-icon">
-                <form action="search" method="POST">
-                    <label for="searh">
-                        Buscar productos, marcas
-                        <input type="search">
-                    </label>
+                <form class="search-bar"action="search" method="POST">
+                    <label for="searh"></label>
+                    <input class = "search-form"type="text" aria-label="Buscar productos, marcas" name="search-bar" placeholder="Buscá productos, marcas" autocomplete="off" autocorrect="OFF">
+                    <button class= "search-button" type="submit">
+                            <i class="fas fa-search"></i>
+                    </button>
                 </form>
-                <i class="fas fa-search"></i>
             </div>
-        </div>
-        <div class="promo">
-            <i class="fas fa-hand-holding-usd"></i>
-            Comprá en cuotas y sin tarjeta de crédito
+            <div class="promo">
+                <i class="fas fa-hand-holding-usd"></i>
+                    Comprá en cuotas y sin tarjeta de crédito
+            </div>
         </div>
         <nav class="nav-bar">
             <div class="nav-bar1">
@@ -62,7 +63,8 @@
         </div>
     </header>
     <main>
-        <p class = "title">Basado en tu última visita</p>
+        <img class="banner" src="/images/img-home-banner.jpg" alt="home-banner.jpg">
+        <h2 class = "title">Basado en tu última visita</h2>
         <section>
             <article>
                 <img src="/images/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex.jpg">
@@ -109,7 +111,7 @@
                 </div>
             </article>
         </section>
-        <p class = "title">Ofertas</p>
+        <h2 class = "title">Ofertas</h2>
         <section>
             <article>
                 <img src="/images/img-cafetera-moulinex.jpg" alt="img-cafetera-moulinex.jpg">

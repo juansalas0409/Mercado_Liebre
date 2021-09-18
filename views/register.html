@@ -13,18 +13,23 @@
 </head>
 <body>
     <header>
-        <div class="logo-search">
-            <div>
+        <div class="header-tablet">
+            <div class="logo-search">
                 <img class = "logo" src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre.svg">
             </div>
             <div class="search-icon">
-                Buscar productos, marcas
-                <i class="fas fa-search"></i>
+                <form class="search-bar"action="search" method="POST">
+                    <label for="searh"></label>
+                    <input class = "search-form"type="text" aria-label="Buscar productos, marcas" name="search-bar" placeholder="Buscá productos, marcas" autocomplete="off" autocorrect="OFF">
+                    <button class= "search-button" type="submit">
+                            <i class="fas fa-search"></i>
+                    </button>
+                </form>
             </div>
-        </div>
-        <div class="promo">
-            <i class="fas fa-hand-holding-usd"></i>
-            Comprá en cuotas y sin tarjeta de crédito
+            <div class="promo">
+                <i class="fas fa-hand-holding-usd"></i>
+                    Comprá en cuotas y sin tarjeta de crédito
+            </div>
         </div>
         <nav class="nav-bar">
             <div class="nav-bar1">
