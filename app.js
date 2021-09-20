@@ -8,7 +8,7 @@ app.use(express.static(publicPath));
 
 app.listen(process.env.PORT || 3000, function() {
     console.log('Se esta corriendo el servidor en http://localhost:3000')
-})
+});
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './views/home.html'))
