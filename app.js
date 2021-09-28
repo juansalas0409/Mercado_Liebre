@@ -4,13 +4,13 @@ const app = express();
 
 const path = require('path');
 
-const publicPath = path.join(__dirname, './public');
+// const publicPath = path.join(__dirname, './public');
 
 const routes = require('./routes/main')
 
-app.use(express.static(publicPath));
+app.use(express.static("./public"));
 
-app.set('view engine', 'ejs');
+app.set("view engine", "ejs");
 
 app.use('/', routes);
 
