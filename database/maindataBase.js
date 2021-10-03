@@ -1,6 +1,4 @@
-// const products = require('../database/maindataBase')
-
-const productsList = [
+const products = [
     {
         id: 1,
         name: 'Cafetera Moulinex',
@@ -31,22 +29,4 @@ const productsList = [
     }
 ]
 
-
-const mainController= {
-    home: (req, res) => {
-    return res.render('home');
-    },
-    register: (req, res) => {
-        res.render('register');
-    },
-    login: (req, res) => {
-        res.render('login');
-    },
-    producDetail: (req, res) => {
-        let product = productsList.find(product => product.id == req.params.productId);
-        res.render('producDetail', {product: product});
-        console.log(product);
-    } 
-}
-
-module.exports = mainController 
+module.exports = products
