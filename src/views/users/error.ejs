@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Include Head -->
+<%- include('../partials/head', {title: 'Houston - Tenemos un problema' }) %>
+
+	<body>
+		<!-- Header -->
+		<%- include('../partials/navbar') %>
+
+        <h1><%= message %> </h1>
+        <h2><%= error.status %> </h2>
+        <p>Error Trying to acces to: <b><%= path %> </b></p>
+        <pre><i><%= error.stack %> </i></pre>
+
+		<!-- footer -->
+		<%- include('../partials/footer') %>
+
+	</body>
+</html>

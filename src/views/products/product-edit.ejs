@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+<%- include('../partials/head', {title: 'Resultados de tu búsqueda'}) %> ;
+<body>
+
+    <!-- header -->
+    <%- include('../partials/headerNavbar') %> 
+
+    <div>
+        <div>
+            <div>
+                <h2>Estás editando: <%= productToEdit.name %> </h2>
+            </div>
+        </div>
+        <div>
+            <form action="/products/edit/<%= productToEdit.id %>?_method=PATCH" method="POST">
+                <div>
+                    <div>
+                        <label for="name">Nombre del producto</label>
+                        <input type="text" name="name" id="name" placeholder="Ej: Zapatillas Reebok">
+                    </div>
+                    <div>
+                        <label for="price">Precio del producto:</label>
+                        <input type="number" name="price" id="price" placeholder="Ej: 1234">
+                    </div>
+                    <div>
+                        <label for="discount">Descuento:</label>
+                        <input type="number" name="discount" id="discount" placeholder="Ej: 15">
+                    </div>
+                    <div>
+                        <label for="category">Categoría:</label>
+                        <select name="category" id="category">
+                            <option value="">Elegí</option>
+                            <option value="in-sale">En oferta</option>
+                            <option value="visited">Últimos agregados</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="description">Descripción:</label>
+                        <textarea name="description" id="description"><%= productToEdit.description %></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Guardar producto</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <%- include('../partials/footer') %> 
+    
+</body>
+</html>

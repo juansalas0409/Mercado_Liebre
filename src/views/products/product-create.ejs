@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+<%- include('../partials/head', {title: 'Formulario de creación'}) %> ;
+<body>
+
+    <!-- header -->
+    <%- include('../partials/headerNavbar') %> 
+
+    <div>
+		<div>
+			<div>
+				<h2>Formulario de creación de productos</h2>
+			</div>
+		</div>
+		<div>
+			<form action="/products" method="POST" enctype="multipart/form-data">
+				<div>
+					<div>
+						<label for="name">Nombre del producto:</label>
+						<input type="text" id="name" name="name" placeholder="Ej: Zapatillas Reebok">
+					</div>
+					<div>
+						<label for="price">Precio del producto:</label>
+						<input type="number" id="price" name="price" placeholder="Ej: 5678">
+					</div>
+					<div>
+						<label for="discount">Descuento:</label>
+						<input type="number" id="discount" name="discount" placeholder="Ej: 15">
+					</div>
+					<div>
+						<label for="category">Categoría:</label>
+						<select name="category" id="category">
+							<option value="">Elegí</option>
+							<option value="in-sale">En oferta</option>
+							<option value="visited">Últimos agregados</option>
+						</select>
+					</div>
+					<div>
+						<label for="description">Descipción:</label>
+						<textarea name="description" id="description"></textarea>
+					</div>
+					<div>
+						<label for="imagen">Imagen del producto:</label>
+						<input name="imagen" id="imagen"></input>
+					</div>
+					<div class="col-12">
+						<button type="submit">Guardar producto</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+    <!-- footer -->
+	<%- include('../partials/footer') %>
+
+
+</body>
+</html>
